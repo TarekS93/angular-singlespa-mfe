@@ -42,6 +42,25 @@ git clone angular-singlespa-mfe
 
 ## 🚀 Installa e avvia tutto
 
+### Metodo automatizzato (consigliato)
+
+**Installazione di tutte le dipendenze con un solo comando:**
+```bash
+./install-all.bat
+```
+
+**Avvio dell'applicazione (aprire 3 terminali separati):**
+```bash
+# Terminale 1 - App principale
+./start-root.bat
+
+# Terminale 2 - Barra di navigazione
+./start-navbar.bat
+
+# Terminale 3 - Dashboard
+./start-dashboard.bat
+```
+
 ### Modo manuale (3 terminali separati)
 
 **Terminal 1 - App principale:**
@@ -55,14 +74,14 @@ npm start
 ```bash
 cd navbar
 npm install 
-ng serve
+npm start
 ```
 
 **Terminal 3 - Dashboard:**
 ```bash
 cd dashboard
 npm install
-ng serve
+npm start
 ```
 
 ## 🌐 Apri l'app
