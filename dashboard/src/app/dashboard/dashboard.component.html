@@ -1,229 +1,215 @@
-<div class="container-fluid">
-  <div class="row">
-    <!-- Sidebar -->
-    <div class="col-md-2 sidebar p-0">
-      <div class="p-3">
+<!-- Main Content -->
+<div class="container">
+
+  <!-- Header -->
+  <div class="page-header p-4">
+    <div class="d-flex  justify-content-end">
+      <button class="nav-link" routerLink="/dashboard/settings" routerLinkActive="active">
+        <i class="bi bi-gear me-2"></i>Impostazioni
+      </button>
+    </div>
+    <div class="d-flex justify-content-between align-items-center">
+      <div>
+        <h2 class="mb-1">Benvenuto, Mario!</h2>
+        <p class="text-muted mb-0">
+          Ecco un riepilogo delle tue attività oggi
+        </p>
+      </div>
+      <div>
+        <button class="btn btn-outline-primary me-2">
+          <i class="bi bi-download me-1"></i>Esporta
+        </button>
+        <button class="btn btn-primary">
+          <i class="bi bi-plus-lg me-1"></i>Nuovo
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="p-4">
+    <!-- Stats Cards -->
+    <div class="row mb-4">
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card dashboard-card stat-card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <div>
+                <h6 class="card-title mb-1">Vendite Totali</h6>
+                <h3 class="mb-0">€24,500</h3>
+                <small class="text-white-50">+12% dal mese scorso</small>
+              </div>
+              <div class="align-self-center">
+                <i class="bi bi-currency-euro fs-1 opacity-75"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card dashboard-card stat-card-success">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <div>
+                <h6 class="card-title mb-1">Nuovi Clienti</h6>
+                <h3 class="mb-0">156</h3>
+                <small class="text-white-50">+5% questa settimana</small>
+              </div>
+              <div class="align-self-center">
+                <i class="bi bi-people fs-1 opacity-75"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card dashboard-card stat-card-warning">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <div>
+                <h6 class="card-title mb-1">Ordini Attivi</h6>
+                <h3 class="mb-0">89</h3>
+                <small class="text-white-50">In elaborazione</small>
+              </div>
+              <div class="align-self-center">
+                <i class="bi bi-box-seam fs-1 opacity-75"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card dashboard-card stat-card-info">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <div>
+                <h6 class="card-title mb-1">Tasso Conversione</h6>
+                <h3 class="mb-0">3.2%</h3>
+                <small class="text-white-50">+0.5% dal mese scorso</small>
+              </div>
+              <div class="align-self-center">
+                <i class="bi bi-graph-up-arrow fs-1 opacity-75"></i>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-
-    <!-- Main Content -->
-    <div class="col-md-10 main-content p-0">
-
-      <!-- Header -->
-      <div class="page-header p-4">
-        <div class="d-flex  justify-content-end">
-          <button class="nav-link" routerLink="/dashboard/settings" routerLinkActive="active">
-            <i class="bi bi-gear me-2"></i>Impostazioni
-          </button>
-        </div>
-        <div class="d-flex justify-content-between align-items-center">
-          <div>
-            <h2 class="mb-1">Benvenuto, Mario!</h2>
-            <p class="text-muted mb-0">
-              Ecco un riepilogo delle tue attività oggi
-            </p>
+    <!-- Charts Row -->
+    <div class="row mb-4">
+      <div class="col-xl-8 mb-4">
+        <div class="card dashboard-card">
+          <div class="card-header bg-white">
+            <h5 class="card-title mb-0">
+              <i class="bi bi-bar-chart me-2"></i>Vendite Mensili
+            </h5>
           </div>
-          <div>
-            <button class="btn btn-outline-primary me-2">
-              <i class="bi bi-download me-1"></i>Esporta
-            </button>
-            <button class="btn btn-primary">
-              <i class="bi bi-plus-lg me-1"></i>Nuovo
-            </button>
+          <div class="card-body">
+            <div class="chart-placeholder">
+              <div class="text-center">
+                <i class="bi bi-bar-chart-line fs-1 text-muted mb-3"></i>
+                <p class="text-muted">Grafico delle vendite mensili</p>
+                <small class="text-muted">Qui andrà il tuo grafico Chart.js o ng2-charts</small>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Content -->
-      <div class="p-4">
-        <!-- Stats Cards -->
-        <div class="row mb-4">
-          <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card dashboard-card stat-card">
-              <div class="card-body">
-                <div class="d-flex justify-content-between">
-                  <div>
-                    <h6 class="card-title mb-1">Vendite Totali</h6>
-                    <h3 class="mb-0">€24,500</h3>
-                    <small class="text-white-50">+12% dal mese scorso</small>
-                  </div>
-                  <div class="align-self-center">
-                    <i class="bi bi-currency-euro fs-1 opacity-75"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div class="col-xl-4 mb-4">
+        <div class="card dashboard-card">
+          <div class="card-header bg-white">
+            <h5 class="card-title mb-0">
+              <i class="bi bi-pie-chart me-2"></i>Categorie Prodotti
+            </h5>
           </div>
-
-          <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card dashboard-card stat-card-success">
-              <div class="card-body">
-                <div class="d-flex justify-content-between">
-                  <div>
-                    <h6 class="card-title mb-1">Nuovi Clienti</h6>
-                    <h3 class="mb-0">156</h3>
-                    <small class="text-white-50">+5% questa settimana</small>
-                  </div>
-                  <div class="align-self-center">
-                    <i class="bi bi-people fs-1 opacity-75"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card dashboard-card stat-card-warning">
-              <div class="card-body">
-                <div class="d-flex justify-content-between">
-                  <div>
-                    <h6 class="card-title mb-1">Ordini Attivi</h6>
-                    <h3 class="mb-0">89</h3>
-                    <small class="text-white-50">In elaborazione</small>
-                  </div>
-                  <div class="align-self-center">
-                    <i class="bi bi-box-seam fs-1 opacity-75"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card dashboard-card stat-card-info">
-              <div class="card-body">
-                <div class="d-flex justify-content-between">
-                  <div>
-                    <h6 class="card-title mb-1">Tasso Conversione</h6>
-                    <h3 class="mb-0">3.2%</h3>
-                    <small class="text-white-50">+0.5% dal mese scorso</small>
-                  </div>
-                  <div class="align-self-center">
-                    <i class="bi bi-graph-up-arrow fs-1 opacity-75"></i>
-                  </div>
-                </div>
+          <div class="card-body">
+            <div class="chart-placeholder">
+              <div class="text-center">
+                <i class="bi bi-pie-chart fs-1 text-muted mb-3"></i>
+                <p class="text-muted">Distribuzione categorie</p>
+                <small class="text-muted">Grafico a torta</small>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
-        <!-- Charts Row -->
-        <div class="row mb-4">
-          <div class="col-xl-8 mb-4">
-            <div class="card dashboard-card">
-              <div class="card-header bg-white">
-                <h5 class="card-title mb-0">
-                  <i class="bi bi-bar-chart me-2"></i>Vendite Mensili
-                </h5>
-              </div>
-              <div class="card-body">
-                <div class="chart-placeholder">
-                  <div class="text-center">
-                    <i class="bi bi-bar-chart-line fs-1 text-muted mb-3"></i>
-                    <p class="text-muted">Grafico delle vendite mensili</p>
-                    <small class="text-muted">Qui andrà il tuo grafico Chart.js o ng2-charts</small>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <!-- Recent Activity -->
+    <div class="row">
+      <div class="col-xl-8 mb-4">
+        <div class="card dashboard-card">
+          <div class="card-header bg-white d-flex justify-content-between align-items-center">
+            <h5 class="card-title mb-0">
+              <i class="bi bi-clock-history me-2"></i>Attività Recenti
+            </h5>
+            <a href="#" class="btn btn-sm btn-outline-primary">Vedi tutto</a>
           </div>
-
-          <div class="col-xl-4 mb-4">
-            <div class="card dashboard-card">
-              <div class="card-header bg-white">
-                <h5 class="card-title mb-0">
-                  <i class="bi bi-pie-chart me-2"></i>Categorie Prodotti
-                </h5>
-              </div>
-              <div class="card-body">
-                <div class="chart-placeholder">
-                  <div class="text-center">
-                    <i class="bi bi-pie-chart fs-1 text-muted mb-3"></i>
-                    <p class="text-muted">Distribuzione categorie</p>
-                    <small class="text-muted">Grafico a torta</small>
-                  </div>
+          <div class="card-body p-0">
+            <div class="list-group list-group-flush">
+              <div class="list-group-item d-flex align-items-center">
+                <div class="avatar bg-primary rounded-circle me-3 d-flex align-items-center justify-content-center"
+                  style="width: 40px; height: 40px">
+                  <i class="bi bi-person-plus text-white"></i>
                 </div>
+                <div class="flex-grow-1">
+                  <h6 class="mb-1">Nuovo cliente registrato</h6>
+                  <small class="text-muted">Marco Bianchi si è registrato</small>
+                </div>
+                <small class="text-muted">2 min fa</small>
+              </div>
+
+              <div class="list-group-item d-flex align-items-center">
+                <div class="avatar bg-success rounded-circle me-3 d-flex align-items-center justify-content-center"
+                  style="width: 40px; height: 40px">
+                  <i class="bi bi-cart-check text-white"></i>
+                </div>
+                <div class="flex-grow-1">
+                  <h6 class="mb-1">Ordine completato</h6>
+                  <small class="text-muted">Ordine #1234 consegnato</small>
+                </div>
+                <small class="text-muted">15 min fa</small>
+              </div>
+
+              <div class="list-group-item d-flex align-items-center">
+                <div class="avatar bg-warning rounded-circle me-3 d-flex align-items-center justify-content-center"
+                  style="width: 40px; height: 40px">
+                  <i class="bi bi-exclamation-triangle text-white"></i>
+                </div>
+                <div class="flex-grow-1">
+                  <h6 class="mb-1">Stock in esaurimento</h6>
+                  <small class="text-muted">Prodotto XYZ ha solo 5 unità</small>
+                </div>
+                <small class="text-muted">1 ora fa</small>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Recent Activity -->
-        <div class="row">
-          <div class="col-xl-8 mb-4">
-            <div class="card dashboard-card">
-              <div class="card-header bg-white d-flex justify-content-between align-items-center">
-                <h5 class="card-title mb-0">
-                  <i class="bi bi-clock-history me-2"></i>Attività Recenti
-                </h5>
-                <a href="#" class="btn btn-sm btn-outline-primary">Vedi tutto</a>
-              </div>
-              <div class="card-body p-0">
-                <div class="list-group list-group-flush">
-                  <div class="list-group-item d-flex align-items-center">
-                    <div class="avatar bg-primary rounded-circle me-3 d-flex align-items-center justify-content-center"
-                      style="width: 40px; height: 40px">
-                      <i class="bi bi-person-plus text-white"></i>
-                    </div>
-                    <div class="flex-grow-1">
-                      <h6 class="mb-1">Nuovo cliente registrato</h6>
-                      <small class="text-muted">Marco Bianchi si è registrato</small>
-                    </div>
-                    <small class="text-muted">2 min fa</small>
-                  </div>
-
-                  <div class="list-group-item d-flex align-items-center">
-                    <div class="avatar bg-success rounded-circle me-3 d-flex align-items-center justify-content-center"
-                      style="width: 40px; height: 40px">
-                      <i class="bi bi-cart-check text-white"></i>
-                    </div>
-                    <div class="flex-grow-1">
-                      <h6 class="mb-1">Ordine completato</h6>
-                      <small class="text-muted">Ordine #1234 consegnato</small>
-                    </div>
-                    <small class="text-muted">15 min fa</small>
-                  </div>
-
-                  <div class="list-group-item d-flex align-items-center">
-                    <div class="avatar bg-warning rounded-circle me-3 d-flex align-items-center justify-content-center"
-                      style="width: 40px; height: 40px">
-                      <i class="bi bi-exclamation-triangle text-white"></i>
-                    </div>
-                    <div class="flex-grow-1">
-                      <h6 class="mb-1">Stock in esaurimento</h6>
-                      <small class="text-muted">Prodotto XYZ ha solo 5 unità</small>
-                    </div>
-                    <small class="text-muted">1 ora fa</small>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div class="col-xl-4 mb-4">
+        <div class="card dashboard-card">
+          <div class="card-header bg-white">
+            <h5 class="card-title mb-0">
+              <i class="bi bi-list-task me-2"></i>Task Rapidi
+            </h5>
           </div>
-
-          <div class="col-xl-4 mb-4">
-            <div class="card dashboard-card">
-              <div class="card-header bg-white">
-                <h5 class="card-title mb-0">
-                  <i class="bi bi-list-task me-2"></i>Task Rapidi
-                </h5>
-              </div>
-              <div class="card-body">
-                <div class="d-grid gap-2">
-                  <button class="btn btn-outline-primary">
-                    <i class="bi bi-plus-lg me-2"></i>Aggiungi Prodotto
-                  </button>
-                  <button class="btn btn-outline-success">
-                    <i class="bi bi-person-plus me-2"></i>Nuovo Cliente
-                  </button>
-                  <button class="btn btn-outline-info">
-                    <i class="bi bi-file-earmark-text me-2"></i>Genera Report
-                  </button>
-                  <button class="btn btn-outline-warning">
-                    <i class="bi bi-gear me-2"></i>Impostazioni
-                  </button>
-                </div>
-              </div>
+          <div class="card-body">
+            <div class="d-grid gap-2">
+              <button class="btn btn-outline-primary">
+                <i class="bi bi-plus-lg me-2"></i>Aggiungi Prodotto
+              </button>
+              <button class="btn btn-outline-success">
+                <i class="bi bi-person-plus me-2"></i>Nuovo Cliente
+              </button>
+              <button class="btn btn-outline-info">
+                <i class="bi bi-file-earmark-text me-2"></i>Genera Report
+              </button>
             </div>
           </div>
         </div>
