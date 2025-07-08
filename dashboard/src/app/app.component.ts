@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dashboard';
+
+  ngOnInit() {
+    console.log(window.eventBus.getLastEvent("route-changed"));
+  }
 }

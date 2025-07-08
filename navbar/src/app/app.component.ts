@@ -14,10 +14,13 @@ export class AppComponent {
   goToDashboard() {
     this.currentRoute = "/dashboard";
     navigateToUrl(this.currentRoute);
+    window.eventBus.emit("route-changed", this.currentRoute);
   }
 
   goToHome() {
     this.currentRoute = "/";
     navigateToUrl(this.currentRoute);
+    window.eventBus.emit("route-changed", this.currentRoute);
+
   }
 }

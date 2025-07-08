@@ -4,6 +4,9 @@ import {
   constructLayoutEngine,
   constructRoutes,
 } from "single-spa-layout";
+import eventBus from "./event-bus.js";
+// Esponi l'EventBus globalmente
+window.eventBus = eventBus;
 
 const data = {
   props: {
