@@ -11,6 +11,10 @@ export class AppComponent {
   title = "navbar";
   currentRoute: string = '';
 
+  constructor() {
+    this.currentRoute = window.location.pathname;
+  }
+
   goToDashboard() {
     this.currentRoute = "/dashboard";
     navigateToUrl(this.currentRoute);
