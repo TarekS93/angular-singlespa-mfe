@@ -9,14 +9,15 @@ import { navigateToUrl } from "single-spa";
 })
 export class AppComponent {
   title = "navbar";
+  currentRoute: string = '';
 
   goToDashboard() {
-    console.log("goToDashboard");
-    navigateToUrl("/dashboard");
+    this.currentRoute = "/dashboard";
+    navigateToUrl(this.currentRoute);
   }
 
   goToHome() {
-    console.log("goToHome");
-    navigateToUrl("/");
+    this.currentRoute = "/";
+    navigateToUrl(this.currentRoute);
   }
 }
